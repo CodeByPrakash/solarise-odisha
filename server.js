@@ -4,11 +4,15 @@ const cors = require('cors');
 require('dotenv').config();
 
 const documentationCasesRoute = require('./routes/documentationCasesRoute');
+const agentsRoute = require('./routes/agentsRoute');
+const customersRoutes = require('./routes/customersRoutes');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use('/api/agents', agentsRoute);
+app.use('/api/customers', customersRoutes);
 app.use('/api/documentation-cases', documentationCasesRoute);
 
 mongoose.connect(process.env.MONGO_URI)
