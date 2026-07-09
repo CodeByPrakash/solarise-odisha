@@ -8,10 +8,10 @@ Optional but recommended: create a Collection called "Solarise Odisha" with thre
 For every POST/PATCH request: method + body, set Body → raw → JSON in Postman.
 
 Step 1 — Create an Agent
-POST {{baseUrl}}/agents
+POST {{baseUrl}}/api/agents
 json{
-  "name": "Ravi Kumar",
-  "email": "ravi@solarise.com",
+  "name": "Om Prakash",
+  "email": "om@solarise.com",
   "address": "Bhubaneswar, Odisha",
   "phone": 9876543210
 }

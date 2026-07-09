@@ -1,5 +1,6 @@
 Task Initiative Done. Make Sure All Contribute and commit changes.
-
+## 📂 Project Structure (Init)
+```text
 New Structure 
 solarise-odisha/
 ├── config/
@@ -17,3 +18,4 @@ solarise-odisha/
 │   ├── customersRoutes.js               (existing, empty)
 │   └── documentationCasesRoute.js      ⏳ next — wires controller functions to URLs
 └── server.js                            ⏳ next — needs 2 lines added to mount the new route
+```
